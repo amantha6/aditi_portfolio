@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditi | Software Developer</title>
+    <meta name="description" content="Portfolio of Aditi - Software Developer specializing in modern web technologies">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-mesh"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo"><img src="logo.png" alt="Aditi" class="logo-img"></a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <a href="/resume.pdf" class="btn-small" target="_blank">Resume</a>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content-wrapper">
+                <div class="hero-text">
+                    <h1 class="hero-name">Hello, I'm Aditi Mantha</h1>
+                    <h2 class="hero-subtitle">Software Developer</h2>
+                    <a href="#projects" class="btn-primary">View My Work</a>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-img-wrapper">
+                        <img src="avatar.jpg" alt="Aditi" class="hero-profile-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Hi, I'm Aditi. I'm a Software Developer at HealthStream with an MS in Computer
+                            Science from Binghamton University.
+                            I build scalable applications and am particularly interested in AI and intelligent systems.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title">Where I've Worked</h2>
+                <div class="jobs-tabs">
+                    <div class="tabs-list">
+                        <button class="tab-btn active" data-tab="job1">HealthStream</button>
+                        <button class="tab-btn" data-tab="job2">Graduate Assistant</button>
+                        <button class="tab-btn" data-tab="job3">Teaching Assistant</button>
+                    </div>
+                    <div class="tabs-panels">
+                        <div class="tab-panel active" id="job1">
+                            <h3>Software Developer <span class="company">at HealthStream</span></h3>
+                            <p class="job-duration">May 2025 - Present</p>
+                            <ul class="job-description">
+                                <li>At HealthStream, I work as a Software Developer on ShiftWizard, a workforce
+                                    scheduling platform used by healthcare organizations across the U.S.</li>
+                                <li>I focus primarily on building and improving mobile application features that help
+                                    healthcare staff view schedules, swap shifts, request time off, and stay connected
+                                    in real time.</li>
+                                <li>A large part of my work involves translating complex scheduling
+                                    workflows into clear, intuitive mobile experiences that are easy to use in
+                                    fast-paced healthcare environments.</li>
+                                <li>My day-to-day work spans developing frontend features in TypeScript, collaborating
+                                    with backend teams on services built with C# and .NET, and supporting cloud-based
+                                    workflows on Microsoft Azure.</li>
+                                <li>I work closely with product managers, designers, and
+                                    QA to ensure features are reliable, scalable, and thoughtfully designed from both a
+                                    technical and user perspective.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-panel" id="job2">
+                            <h3>Graduate Assistant <span class="company">at Binghamton University</span></h3>
+                            <p class="job-duration">Jun 2024 - May 2025</p>
+                            <ul class="job-description">
+                                <li>As a Graduate Assistant, I supported the development and maintenance of
+                                    institutional web portals and internal systems used across the university.</li>
+                                <li>I worked extensively with Slate to improve user-facing workflows for students,
+                                    faculty, and administrative teams, focusing on making processes clearer and more
+                                    efficient.</li>
+                                <li>My role also involved integrating REST APIs to enable reliable data
+                                    exchange between systems and ensure information stayed consistent across platforms.
+                                </li>
+                                <li>In addition, I developed Python automation scripts to streamline data processing
+                                    tasks, reduce manual administrative effort, and improve the overall efficiency of
+                                    recurring workflows.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-panel" id="job3">
+                            <h3>Teaching Assistant <span class="company">at Binghamton University</span></h3>
+                            <p class="job-duration">Aug 2023 - May 2024</p>
+                            <ul class="job-description">
+                                <li>As a Teaching Assistant, I supported instruction in core Python programming,
+                                    covering topics such as data structures, algorithms, and object-oriented design.
+                                </li>
+                                <li>I worked closely with students to help them debug code, think through
+                                    problem-solving approaches, and make progress on programming assignments and
+                                    projects.</li>
+                                <li>I also created example code, explanations, and learning materials to reinforce key
+                                    concepts and
+                                    encourage clean, readable coding practices.</li>
+                                <li>In addition, I assisted with grading and feedback, helping students strengthen both
+                                    their technical understanding and confidence in writing Python code.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Projects I've Built</h2>
+
+                <!-- AI & Machine Learning -->
+                <h3 class="projects-category-title">AI & Machine Learning</h3>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="card-top">
+                            <div class="folder-icon"><i class="fa-solid fa-brain"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/amantha6/ai-interviewer" target="_blank"
+                                    aria-label="GitHub Link"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="card-title"><a href="https://github.com/amantha6/ai-interviewer" target="_blank">AI
+                                Mock Interview Platform</a></h3>
+                        <div class="card-description">
+                            <p>Full-stack application that helps users prepare for interviews through AI-powered mock
+                                interviews. Features real-time simulation, personalized feedback, and progress tracking.
+                            </p>
+                        </div>
+                        <ul class="card-tech-list">
+                            <li>JavaScript</li>
+                            <li>AI Integration</li>
+                            <li>Real-time Processing</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="card-top">
+                            <div class="folder-icon"><i class="fa-solid fa-video"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/amantha6/tennis-analysis" target="_blank"
+                                    aria-label="GitHub Link"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="card-title"><a href="https://github.com/amantha6/tennis-analysis"
+                                target="_blank">Tennis Analysis System</a></h3>
+                        <div class="card-description">
+                            <p>End-to-end tennis analysis system combining computer vision and ML. Detects players,
+                                tracks ball movement, identifies court keypoints using state-of-the-art algorithms.</p>
+                        </div>
+                        <ul class="card-tech-list">
+                            <li>Python</li>
+                            <li>Computer Vision</li>
+                            <li>OpenCV</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="card-top">
+                            <div class="folder-icon"><i class="fa-solid fa-plane"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/amantha6/flight-fare-detection" target="_blank"
+                                    aria-label="GitHub Link"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="card-title"><a href="https://github.com/amantha6/flight-fare-detection"
+                                target="_blank">Flight Fare Prediction</a></h3>
+                        <div class="card-description">
+                            <p>Machine learning system to predict flight prices using RandomForest and decision trees.
+                                Enables travelers and agencies to optimize booking strategies.</p>
+                        </div>
+                        <ul class="card-tech-list">
+                            <li>Python</li>
+                            <li>RandomForest</li>
+                            <li>Machine Learning</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="card-top">
+                            <div class="folder-icon"><i class="fa-solid fa-code-branch"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/amantha6/SynthEval-Automated-Code-Review-Dataset-Generator-with-Human-Validation"
+                                    target="_blank" aria-label="GitHub Link"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="card-title"><a
+                                href="https://github.com/amantha6/SynthEval-Automated-Code-Review-Dataset-Generator-with-Human-Validation"
+                                target="_blank">SynthEval - Code Review</a></h3>
+                        <div class="card-description">
+                            <p>Platform combining synthetic code review generation with human validation. Leverages LLMs
+                                (GPT-3.5) to create high-quality datasets for code review analysis.</p>
+                        </div>
+                        <ul class="card-tech-list">
+                            <li>LLM Integration</li>
+                            <li>GPT-3.5</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="card-top">
+                            <div class="folder-icon"><i class="fa-solid fa-network-wired"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/amantha6/MNIST-with-CNN" target="_blank"
+                                    aria-label="GitHub Link"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="card-title"><a href="https://github.com/amantha6/MNIST-with-CNN"
+                                target="_blank">MNIST with CNN</a></h3>
+                        <div class="card-description">
+                            <p>Convolutional Neural Network implementation using PyTorch for image classification on the
+                                MNIST dataset.</p>
+                        </div>
+                        <ul class="card-tech-list">
+                            <li>PyTorch</li>
+                            <li>CNN</li>
+                            <li>Deep Learning</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Full-Stack Web Applications -->
+                <h3 class="projects-category-title">Full-Stack Web Applications</h3>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="card-top">
+                            <div class="folder-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/amantha6/TripCanvas---Travel-Planner-Application"
+                                    target="_blank" aria-label="GitHub Link"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="card-title"><a
+                                href="https://github.com/amantha6/TripCanvas---Travel-Planner-Application"
+                                target="_blank">TripCanvas</a></h3>
+                        <div class="card-description">
+                            <p>Full-stack travel planning application with Kotlin backend and React frontend. Create
+                                itineraries, search locations, and organize trips.</p>
+                        </div>
+                        <ul class="card-tech-list">
+                            <li>Kotlin</li>
+                            <li>React</li>
+                            <li>REST API</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="card-top">
+                            <div class="folder-icon"><i class="fa-solid fa-list-check"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/amantha6/Task-Manager" target="_blank"
+                                    aria-label="GitHub Link"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://task-manager-one-sage.vercel.app/" target="_blank"
+                                    aria-label="External Link"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="card-title"><a href="https://github.com/amantha6/Task-Manager" target="_blank">Task
+                                Manager</a></h3>
+                        <div class="card-description">
+                            <p>Comprehensive task management with the MEAN stack. Task creation, assignment, status
+                                tracking, and real-time updates.</p>
+                        </div>
+                        <ul class="card-tech-list">
+                            <li>Angular</li>
+                            <li>Node.js</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="card-top">
+                            <div class="folder-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/amantha6/Crisis-Management-System" target="_blank"
+                                    aria-label="GitHub Link"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="card-title"><a href="https://github.com/amantha6/Crisis-Management-System"
+                                target="_blank">Crisis Management</a></h3>
+                        <div class="card-description">
+                            <p>Real-time crisis management platform. Processes and analyzes crisis data for emergency
+                                response.</p>
+                        </div>
+                        <ul class="card-tech-list">
+                            <li>JavaScript</li>
+                            <li>Real-time</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="card-top">
+                            <div class="folder-icon"><i class="fa-solid fa-folder-open"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/amantha6/DataVault" target="_blank"
+                                    aria-label="GitHub Link"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="card-title"><a href="https://github.com/amantha6/DataVault"
+                                target="_blank">DataVault</a></h3>
+                        <div class="card-description">
+                            <p>Secure document management with Node.js, Express, MongoDB, and AWS S3.</p>
+                        </div>
+                        <ul class="card-tech-list">
+                            <li>Node.js</li>
+                            <li>MongoDB</li>
+                            <li>AWS S3</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="card-top">
+                            <div class="folder-icon"><i class="fa-solid fa-store"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/amantha6/The-Vertical-Marketplace" target="_blank"
+                                    aria-label="GitHub Link"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="card-title"><a href="https://github.com/amantha6/The-Vertical-Marketplace"
+                                target="_blank">The Vertical</a></h3>
+                        <div class="card-description">
+                            <p>Marketplace platform for local artisans and small businesses.</p>
+                        </div>
+                        <ul class="card-tech-list">
+                            <li>E-commerce</li>
+                            <li>Full-stack</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="card-top">
+                            <div class="folder-icon"><i class="fa-solid fa-comments"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/amantha6/Digital-Assistant" target="_blank"
+                                    aria-label="GitHub Link"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="card-title"><a href="https://github.com/amantha6/Digital-Assistant"
+                                target="_blank">Digital Assistant</a></h3>
+                        <div class="card-description">
+                            <p>Conversational chatbot integrating the ChatGPT API with responsive design.</p>
+                        </div>
+                        <ul class="card-tech-list">
+                            <li>ChatGPT API</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Interactive Games & Demos -->
+                <h3 class="projects-category-title">Interactive Games & Demos</h3>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="card-top">
+                            <div class="folder-icon"><i class="fa-solid fa-table-cells"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/amantha6/sudoku-app" target="_blank"
+                                    aria-label="GitHub Link"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://sudoku-app-silk.vercel.app/" target="_blank"
+                                    aria-label="External Link"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="card-title"><a href="https://github.com/amantha6/sudoku-app" target="_blank">Sudoku
+                                App</a></h3>
+                        <div class="card-description">
+                            <p>Interactive Sudoku game with multiple difficulty levels and auto-solving visualization.
+                            </p>
+                        </div>
+                        <ul class="card-tech-list">
+                            <li>React</li>
+                            <li>Algorithms</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="card-top">
+                            <div class="folder-icon"><i class="fa-solid fa-dove"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/amantha6/FlappyBird" target="_blank"
+                                    aria-label="GitHub Link"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://flappy-bird-eta-ruby.vercel.app/" target="_blank"
+                                    aria-label="External Link"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="card-title"><a href="https://github.com/amantha6/FlappyBird" target="_blank">Flappy
+                                Bird</a></h3>
+                        <div class="card-description">
+                            <p>Modern remake of classic Flappy Bird with smooth animations and collision detection.</p>
+                        </div>
+                        <ul class="card-tech-list">
+                            <li>React</li>
+                            <li>Game Dev</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="card-top">
+                            <div class="folder-icon"><i class="fa-solid fa-grip"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/amantha6/memory-tile-game" target="_blank"
+                                    aria-label="GitHub Link"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://memory-tile-game-bay.vercel.app/" target="_blank"
+                                    aria-label="External Link"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="card-title"><a href="https://github.com/amantha6/memory-tile-game"
+                                target="_blank">Memory Tile Game</a></h3>
+                        <div class="card-description">
+                            <p>Memory card matching game with multiple themes and high score tracking.</p>
+                        </div>
+                        <ul class="card-tech-list">
+                            <li>HTML5 Canvas</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="card-top">
+                            <div class="folder-icon"><i class="fa-solid fa-chess"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/amantha6/Chess_Game" target="_blank"
+                                    aria-label="GitHub Link"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="card-title"><a href="https://github.com/amantha6/Chess_Game" target="_blank">Chess
+                                Game</a></h3>
+                        <div class="card-description">
+                            <p>Chess game with Python and Pygame featuring complete move validation.</p>
+                        </div>
+                        <ul class="card-tech-list">
+                            <li>Python</li>
+                            <li>Pygame</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="card-top">
+                            <div class="folder-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/amantha6/Cursor-Trial-Effect" target="_blank"
+                                    aria-label="GitHub Link"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="card-title"><a href="https://github.com/amantha6/Cursor-Trial-Effect"
+                                target="_blank">Cursor Trail</a></h3>
+                        <div class="card-description">
+                            <p>Elegant cursor trail effect with glowing particles and spring physics.</p>
+                        </div>
+                        <ul class="card-tech-list">
+                            <li>HTML5 Canvas</li>
+                            <li>Animation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- DevOps & Systems -->
+                <h3 class="projects-category-title">DevOps & Systems</h3>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="card-top">
+                            <div class="folder-icon"><i class="fa-solid fa-chart-line"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/amantha6/Cloud-Performance-Monitor" target="_blank"
+                                    aria-label="GitHub Link"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="card-title"><a href="https://github.com/amantha6/Cloud-Performance-Monitor"
+                                target="_blank">Cloud Monitor</a></h3>
+                        <div class="card-description">
+                            <p>Real-time monitoring for cloud services with Spring Boot, Prometheus, and Grafana.</p>
+                        </div>
+                        <ul class="card-tech-list">
+                            <li>Spring Boot</li>
+                            <li>Prometheus</li>
+                            <li>Grafana</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="card-top">
+                            <div class="folder-icon"><i class="fa-solid fa-memory"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/amantha6/MemoryLeakDetection" target="_blank"
+                                    aria-label="GitHub Link"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="card-title"><a href="https://github.com/amantha6/MemoryLeakDetection"
+                                target="_blank">Memory Leak Detection</a></h3>
+                        <div class="card-description">
+                            <p>Utility library for tracking dynamically allocated memory in C/C++ applications.</p>
+                        </div>
+                        <ul class="card-tech-list">
+                            <li>C</li>
+                            <li>Memory Management</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="card-top">
+                            <div class="folder-icon"><i class="fa-solid fa-cloud"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/amantha6/Simple-C-sharp--Weather-App" target="_blank"
+                                    aria-label="GitHub Link"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="card-title"><a href="https://github.com/amantha6/Simple-C-sharp--Weather-App"
+                                target="_blank">Weather App</a></h3>
+                        <div class="card-description">
+                            <p>Lightweight C# console application for current weather information.</p>
+                        </div>
+                        <ul class="card-tech-list">
+                            <li>C#</li>
+                            <li>Weather API</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Computer Vision & Data Science -->
+                <h3 class="projects-category-title">Computer Vision & Data Science</h3>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="card-top">
+                            <div class="folder-icon"><i class="fa-solid fa-cube"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/amantha6/Augmented-Reality-with-openCV" target="_blank"
+                                    aria-label="GitHub Link"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="card-title"><a href="https://github.com/amantha6/Augmented-Reality-with-openCV"
+                                target="_blank">AR with OpenCV</a></h3>
+                        <div class="card-description">
+                            <p>Feature detection using OpenCV's ORB algorithm for AR applications.</p>
+                        </div>
+                        <ul class="card-tech-list">
+                            <li>Python</li>
+                            <li>OpenCV</li>
+                            <li>AR</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="card-top">
+                            <div class="folder-icon"><i class="fa-solid fa-notes-medical"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/amantha6/Data-Formats-and-Image-preprocessing-in-Medical-Imaging"
+                                    target="_blank" aria-label="GitHub Link"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="card-title"><a
+                                href="https://github.com/amantha6/Data-Formats-and-Image-preprocessing-in-Medical-Imaging"
+                                target="_blank">Medical Imaging</a></h3>
+                        <div class="card-description">
+                            <p>DICOM file processing for medical imaging with CT scan visualization.</p>
+                        </div>
+                        <ul class="card-tech-list">
+                            <li>Python</li>
+                            <li>DICOM</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="card-top">
+                            <div class="folder-icon"><i class="fa-solid fa-mug-hot"></i></div>
+                            <div class="project-links">
+                                <a href="https://github.com/amantha6/Neighborhood-Coffee-Shop-Time-Traffic-Analysis"
+                                    target="_blank" aria-label="GitHub Link"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="card-title"><a
+                                href="https://github.com/amantha6/Neighborhood-Coffee-Shop-Time-Traffic-Analysis"
+                                target="_blank">Coffee Shop Analysis</a></h3>
+                        <div class="card-description">
+                            <p>Customer traffic patterns using K-means clustering to identify optimal hours.</p>
+                        </div>
+                        <ul class="card-tech-list">
+                            <li>K-means</li>
+                            <li>Data Viz</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="contact-title">Get In Touch</h2>
+                <p class="contact-description">
+                    I'm always open to new opportunities and interesting conversations.
+                </p>
+                <a href="mailto:aditimantha3@gmail.com" class="btn-primary big-btn">Say Hello</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/amantha6" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/aditimantha" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:aditimantha3@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
