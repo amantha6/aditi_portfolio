@@ -15,6 +15,14 @@ if (hamburger) {
             navLinks.classList.remove('active');
         });
     });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+            hamburger.classList.remove('active');
+            navLinks.classList.remove('active');
+        }
+    });
 }
 
 // Experience Tabs
@@ -41,9 +49,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
+            const navHeight = document.querySelector('.navbar').offsetHeight;
+            const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
+            
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
             });
         }
     });
@@ -86,7 +97,7 @@ if (window.innerWidth > 768) {
     animateOutline();
 
     // Cursor effects on interactive elements
-    const interactiveElements = document.querySelectorAll('a, button, .project-card, .project-image');
+    const interactiveElements = document.querySelectorAll('a, button, .project-card, .tab-btn');
 
     interactiveElements.forEach(el => {
         el.addEventListener('mouseenter', () => {
@@ -132,10 +143,50 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe project cards
+// Observe project cards for fade-in animation
 document.querySelectorAll('.project-card').forEach(card => {
     card.style.opacity = '0';
     card.style.transform = 'translateY(20px)';
     card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(card);
+});
+
+// Add loading class removal after page loads
+window.addEventListener('load', () => {
+    document.body.classList.add('loaded');
+});
+
+// Prevent horizontal scroll on mobile
+function preventHorizontalScroll() {
+    const width = document.documentElement.clientWidth;
+    if (width < 768) {
+        document.body.style.overflowX = 'hidden';
+        document.documentElement.style.overflowX = 'hidden';
+    }
+}
+
+preventHorizontalScroll();
+window.addEventListener('resize', preventHorizontalScroll);
+
+// Handle resize - recreate cursor if needed
+let isDesktop = window.innerWidth > 768;
+
+window.addEventListener('resize', () => {
+    const nowDesktop = window.innerWidth > 768;
+    
+    if (nowDesktop !== isDesktop) {
+        isDesktop = nowDesktop;
+        
+        // Remove existing cursor elements
+        const existingDot = document.querySelector('.cursor-dot');
+        const existingOutline = document.querySelector('.cursor-outline');
+        
+        if (existingDot) existingDot.remove();
+        if (existingOutline) existingOutline.remove();
+        
+        // If we're now on desktop, recreate cursor
+        if (isDesktop) {
+            location.reload(); // Simple reload to reinitialize cursor
+        }
+    }
 });
